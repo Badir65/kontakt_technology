@@ -13,12 +13,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-20">
             <a href="#" className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#6366F1] to-[#8B5CF6] rounded-xl flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
-                </svg>
-              </div>
-              <span className="text-xl font-bold text-gray-900">Kontakt Technology</span>
+              <Image
+                src="/logo-transparent.png"
+                alt="Kontakt Technology"
+                style={{scale: 1.8}}
+                width={180}
+                height={50}
+                className="h-12 w-auto"
+              />
             </a>
 
             <div className="hidden lg:flex items-center gap-8">
@@ -28,9 +30,6 @@ export default function Home() {
             </div>
 
             <div className="hidden lg:flex items-center gap-4">
-              <a href="tel:*1234" className="text-gray-600 hover:text-[#6366F1]">
-                <span className="font-mono font-bold">*1234</span>
-              </a>
               <a href="#contact" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white px-6 py-2.5 rounded-xl font-medium hover:shadow-lg hover:shadow-purple-500/30 transition-all">
                 İndi Qoşul
               </a>
@@ -110,7 +109,7 @@ export default function Home() {
                   </span>
                   <div className="flex items-baseline justify-center gap-1">
                     <span className="text-5xl font-bold text-gray-900">25</span>
-                    <span className="text-gray-500 text-lg">₼/ay</span>
+                    <span className="text-gray-500 text-lg">₼ / ay</span>
                   </div>
                 </div>
 
@@ -147,7 +146,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Niyə <span className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] bg-clip-text text-transparent">Kontakt</span>?
+              Niyə <span className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] bg-clip-text text-transparent">Kontakt Technology</span>?
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
               Müasir texnologiya və keyfiyyətli xidmət ilə internet təcrübənizi yeni səviyyəyə qaldırırıq
@@ -338,7 +337,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="text-gray-500 text-sm">Telefon</div>
-                    <div className="text-xl font-semibold text-gray-900">+994 50 123 45 67</div>
+                    <div className="text-xl font-semibold text-gray-900">+994 12 310 68 68</div>
                   </div>
                 </a>
 
@@ -427,12 +426,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-10 mb-12">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-[#6366F1] to-[#8B5CF6] rounded-xl flex items-center justify-center">
-                  <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
-                  </svg>
-                </div>
-                <span className="text-xl font-bold text-white">Kontakt</span>
+                <span className="text-xl font-bold text-white">Kontakt Technology</span>
               </div>
               <p className="text-gray-400">Evinizə sürətli internet gətirin</p>
             </div>
@@ -458,7 +452,7 @@ export default function Home() {
             <div>
               <h4 className="font-semibold text-white mb-4">Əlaqə</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>+994 50 123 45 67</li>
+                <li>+994 12 310 68 68</li>
                 <li>info@kontakt.az</li>
                 <li>Bakı, Azadlıq pr. 15</li>
               </ul>
@@ -466,7 +460,7 @@ export default function Home() {
           </div>
 
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">© 2024 Kontakt Technology. Bütün hüquqlar qorunur.</p>
+            <p className="text-gray-500 text-sm">© 2026 Kontakt Technology. Bütün hüquqlar qorunur.</p>
             <div className="flex gap-6 text-gray-500 text-sm">
               <a href="#" className="hover:text-white transition">Məxfilik</a>
               <a href="#" className="hover:text-white transition">Şərtlər</a>
