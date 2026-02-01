@@ -25,7 +25,7 @@ export default function Home() {
 
             <div className="hidden lg:flex items-center gap-8">
               <a href="#about" className="text-gray-600 hover:text-[#6366F1] transition">Haqqımızda</a>
-              <a href="#services" className="text-gray-600 hover:text-[#6366F1] transition">Xidmətlər</a>
+              <a href="#xidmetler" className="text-gray-600 hover:text-[#6366F1] transition">Xidmətlər</a>
               <a href="#contact" className="text-gray-600 hover:text-[#6366F1] transition">Əlaqə</a>
             </div>
 
@@ -46,7 +46,7 @@ export default function Home() {
             <div className="lg:hidden py-4 border-t border-gray-100">
               <div className="flex flex-col gap-4">
                 <a href="#about" className="text-gray-600 py-2">Haqqımızda</a>
-                <a href="#services" className="text-gray-600 py-2">Xidmətlər</a>
+                <a href="#xidmetler" className="text-gray-600 py-2">Xidmətlər</a>
                 <a href="#contact" className="text-gray-600 py-2">Əlaqə</a>
                 <a href="#contact" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white px-6 py-3 rounded-xl font-medium text-center">İndi Qoşul</a>
               </div>
@@ -69,74 +69,33 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div>
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                Evinizə<br />
-                <span className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] bg-clip-text text-transparent">Sürətli İnternet</span><br />
-                Gətirin
-              </h1>
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-16">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+              Evinizə<br />
+              <span className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] bg-clip-text text-transparent">Sürətli İnternet</span><br />
+              Gətirin
+            </h1>
 
-              <p className="text-lg text-gray-600 mb-8 max-w-md">
-                Fiber optik texnologiya ilə limitsiz internet. Ailənizdə hər kəs eyni anda rahat istifadə etsin.
-              </p>
+            <p className="text-lg text-gray-600 mb-8 max-w-md">
+              Fiber optik texnologiya ilə limitsiz internet. Ailənizdə hər kəs eyni anda rahat istifadə etsin.
+            </p>
 
-              {/* Stats */}
-              <div className="flex flex-wrap gap-6">
-                <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
-                  <div className="text-2xl font-bold text-gray-900">1 Gbps</div>
-                  <div className="text-gray-500 text-sm">Max Sürət</div>
-                </div>
-                <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
-                  <div className="text-2xl font-bold text-gray-900">99.9%</div>
-                  <div className="text-gray-500 text-sm">Uptime</div>
-                </div>
-                <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
-                  <div className="text-2xl font-bold text-gray-900">7/24</div>
-                  <div className="text-gray-500 text-sm">Dəstək</div>
-                </div>
+            
+            {/* <div className="flex flex-wrap gap-6">
+              <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+                <div className="text-2xl font-bold text-gray-900">1 Gbps</div>
+                <div className="text-gray-500 text-sm">Max Sürət</div>
               </div>
-            </div>
-
-            {/* Right - Pricing Card */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="bg-white rounded-3xl p-8 shadow-2xl shadow-gray-200/50 border border-gray-100 max-w-sm w-full">
-                <div className="text-center mb-6">
-                  <span className="inline-block bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
-                    Ev İnterneti
-                  </span>
-                  <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-5xl font-bold text-gray-900">25</span>
-                    <span className="text-gray-500 text-lg">₼ / ay</span>
-                  </div>
-                </div>
-
-                <ul className="space-y-3 mb-8">
-                  {[
-                    "Yüksək sürətli fiber optik",
-                    "Limitsiz trafik",
-                    "Pulsuz WiFi 6 modem",
-                    "7/24 texniki dəstək",
-                    "Pulsuz quraşdırma"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-3 text-gray-700">
-                      <div className="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center">
-                        <svg className="w-3 h-3 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-
-                <a href="#contact" className="block w-full text-center py-4 rounded-xl bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-all">
-                  İndi Qoşul
-                </a>
+              <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+                <div className="text-2xl font-bold text-gray-900">99.9%</div>
+                <div className="text-gray-500 text-sm">Uptime</div>
               </div>
-            </div>
+              <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+                <div className="text-2xl font-bold text-gray-900">7/24</div>
+                <div className="text-gray-500 text-sm">Dəstək</div>
+              </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -254,6 +213,103 @@ export default function Home() {
                 <p className="text-gray-300 text-sm">Professional komanda</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Packages Section */}
+      <section id="xidmetler" className="py-24 bg-[#FAFBFC]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              TV və internet <span className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] bg-clip-text text-transparent">paketleri</span>
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Evinizə uyğun paketi seçin və sürətli internet təcrübəsi yaşayın
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                name: "Rəqəmsal TV",
+                price: "10",
+                decimal: "",
+                features: [
+                  "200+ TV kanal",
+                  "7/24 texniki dəstək",
+                ],
+              },
+              {
+                name: "Ev İnterneti",
+                price: "25",
+                decimal: "",
+                features: [
+                  "Yüksək sürətli fiber optik",
+                  "Limitsiz trafik",
+                  "Pulsuz WiFi 6 modem",
+                  "7/24 texniki dəstək",
+                  "Pulsuz quraşdırma",
+                ],
+              },
+              {
+                name: "İnternet + Rəqəmsal TV",
+                price: "31",
+                decimal: "",
+                features: [
+                  "Yüksək sürətli fiber optik",
+                  "Limitsiz trafik",
+                  "200+ TV kanal",
+                  "Pulsuz WiFi 6 modem",
+                  "7/24 texniki dəstək",
+                  "Pulsuz quraşdırma",
+                ],
+              },
+              {
+                name: "İnternet + TV + Telefon",
+                price: "34",
+                decimal: ".50",
+                features: [
+                  "Yüksək sürətli fiber optik",
+                  "Limitsiz trafik",
+                  "200+ TV kanal",
+                  "Telefon xətti",
+                  "Pulsuz WiFi 6 modem",
+                  "7/24 texniki dəstək",
+                  "Pulsuz quraşdırma",
+                ],
+              },
+            ].map((pkg, i) => (
+              <div key={i} className="bg-white rounded-3xl p-6 shadow-2xl shadow-gray-200/50 border border-gray-100 flex flex-col">
+                <div className="text-center mb-6">
+                  <span className="inline-block bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                    {pkg.name}
+                  </span>
+                  <div className="flex items-baseline justify-center gap-0.5">
+                    <span className="text-5xl font-bold text-gray-900">{pkg.price}</span>
+                    {pkg.decimal && <span className="text-2xl font-bold text-gray-900">{pkg.decimal}</span>}
+                    <span className="text-gray-500 text-lg ml-1">₼ / ay</span>
+                  </div>
+                </div>
+
+                <ul className="space-y-3 mb-6 flex-1">
+                  {pkg.features.map((item, j) => (
+                    <li key={j} className="flex items-center gap-3 text-gray-700">
+                      <div className="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+
+                <a href="#contact" className="block w-full text-center py-3 rounded-xl bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-all">
+                  Qoşul
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </section>
